@@ -1,0 +1,59 @@
+.message{
+    color: whitesmoke;
+    align-content: center;
+
+}
+
+body{
+    background-image: url("../img/bg.png");
+    font-family: "Century Gothic";
+    color: white;
+    background-size: cover;
+
+}
+
+.container {
+    width: 600px;
+    background: linear-gradient(to top, #1f7199, #8464c4);
+    /*background: #1f7199;*/
+    border: 2px solid #2b91af;
+    border-radius: 30px;
+    text-align: center;
+    padding: 14px;
+}
+
+.container input[type = "submit"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    /*border: 2px solid #2ecc71;*/
+    border: 2px solid #2b91af;
+    padding: 14px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.container input[type = "submit"]:hover{
+    background: #00b0e8;
+}
+
+/*мигающий заголовок*/
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+#blink1 {
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    background: transparent;
+    -webkit-animation: pulsate 0.3s linear infinite;
+    animation: pulsate 0.3s linear infinite;
+}
+
